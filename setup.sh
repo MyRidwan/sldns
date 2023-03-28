@@ -19,6 +19,7 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
+sshx="raw.githubusercontent.com/myridwan/sldns/ipuk"
 akbarvpn="raw.githubusercontent.com/myridwan/sc/ipuk/ssh"
 # Link Hosting Kalian Untuk Sstp
 akbarvpnn="raw.githubusercontent.com/myridwan/sc/ipuk/sstp"
@@ -88,7 +89,7 @@ echo -e "\E[44;1;39m          ⇱ INSTALL SSH-CDN ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e ""
 sleep 2
-wget https://${akbarvpn}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://${sshx}/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://${akbarvpnn}/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 #install ssr
 echo -e ""
